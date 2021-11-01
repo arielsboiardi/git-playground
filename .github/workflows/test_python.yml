@@ -18,12 +18,9 @@ jobs:
 
       - name: Install pytest
         run: |
-          pip install 
-          && pytest
-          && pytest-cov 
-          && numpy
-          && matplotlib
+          pip install pytest pytest-cov numpy matplotlib
 
       - name: Run pytest-cov
         run: |
+          cd lab02
           pytest --cov
