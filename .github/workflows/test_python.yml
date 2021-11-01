@@ -1,0 +1,26 @@
+name: Test python codes
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  run-pytests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install pytest
+        run: |
+          pip install pytest pytest-cov numpy matplotlib
+
+      - name: Run pytest-cov
+        run: |
+          cd lab02
+          pytest --cov
