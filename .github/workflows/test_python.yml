@@ -18,8 +18,12 @@ jobs:
 
       - name: Install pytest
         run: |
-          pip install pytest pytest-cov numpy
+          pip install 
+          && pytest
+          && pytest-cov 
+          && numpy
+          && matplotlib
 
-      - name: Run pytest
+      - name: Run pytest-cov
         run: |
-          pytest
+          pytest --cov
