@@ -34,5 +34,5 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          name: main.pdf
-          path: lab03/main.pdf
+          name: test.pdf
+          path: lab03/test.pdf
