@@ -15,19 +15,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: whatshere
-        run: |
-          pwd
-          ls -lah
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
       - name: create_docker_container
         run: |
-          ls -lah
           cd lab03
           docker build -t latex_container .
-
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
 
       - name: Build latex document
         run: |
