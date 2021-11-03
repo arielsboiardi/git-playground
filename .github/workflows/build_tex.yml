@@ -15,6 +15,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: whatshere
+        run: |
+          pwd
+          ls -lah
+
       - name: create_docker_container
         run: |
           ls -lah
