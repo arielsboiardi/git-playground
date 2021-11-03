@@ -1,0 +1,87 @@
+%%% Shortcuts 
+\newcommand{\wrt}{w.r.t.}
+\newcommand{\ie}{i.\,e.}
+\newcommand{\Ie}{I.\,e.}
+\newcommand{\eg}{e.\,g.}
+\newcommand{\Eg}{E.\,g.}
+
+%%% Style
+\newcommand{\bigO}{\mathcal{O}}
+\usepackage{bm}
+\newcommand{\vect}[1]{\bm{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\ldbsq}{\llbracket}
+\newcommand{\rdbsq}{\rrbracket}
+
+\newcommand{\sendright}[1]{\omit\hspace{\fill}{$\displaystyle{#1}$}}
+
+\newenvironment{weakproblem}
+	{	
+		\vspace{0.5em}\\
+		\begin{minipage}[]{\linewidth}
+		\em
+	}
+	{
+		\end{minipage}
+		\vspace{0.5em}\\
+	}
+
+%%% General
+\newcommand{\id}{\mathrm{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\restr}[2]{#1 |_{#2}}
+\newcommand{\cond}[1]{\mathrm{cond}\left(#1\right)}
+
+%%% Topology
+\newcommand{\cl}[1]{\overline{#1}}
+
+%%% Calculus
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\Jac}{J}
+\newcommand{\explicitJac}[1]{\norm{\dot{\vect{C}}\left(#1\right)}}
+
+%%% Functional spaces
+\newcommand{\sprod}[3][]{\left\langle #2, #3 \right\rangle_{#1}}
+\newcommand{\norm}[2][]{\left\Vert #2 \right\Vert_{#1}}
+\newcommand{\Lp}[1]{L^{#1}}
+\newcommand{\Hil}[2]{H^{#1}\left({#2}\right)}
+\newcommand{\Cl}[1][]{\mathcal{C}^{#1}}
+
+%%% Approximation spaces
+\newcommand{\Xsp}{\mathcal{X}}
+\newcommand{\dof}{\text{DOF}}
+
+%%% Functions
+\newcommand{\HS}[1]{\mathrm{H}{\left( {#1} \right)}}
+\DeclareMathOperator{\arctantwo}{arctan2}
+
+%%% B-splines
+\newcommand{\bspSp}{\mathcal{B}}
+\newcommand{\bsp}[2]{\mathrm{b}_{#1, #2}}
+
+%%% BEM operators
+\newcommand{\jump}[2][]{\left\llbracket #2 \right\rrbracket_{#1}}
+
+%% Potentials
+\newcommand{\SL}[1][]{\ifthenelse{\equal{#1}{}}{\mathcal{S}}{\mathcal{S}\left[#1\right]}}
+\newcommand{\DL}[1][]{\ifthenelse{\equal{#1}{}}{\mathcal{D}}{\mathcal{D}\left[#1\right]}}
+
+% Boundary operators
+\newcommand{\bdSL}[1][]{\ifthenelse{\equal{#1}{}}{\mathrm{V}}{\mathrm{V}\left[#1\right]}}
+\newcommand{\bdDL}{\mathrm{K}}
+\newcommand{\normalSL}{\mathrm{K'}}
+\newcommand{\normalDL}{\mathrm{W}}
+
+% Kernels
+\newcommand{\bdSLK}[1][]{\ifthenelse{\equal{#1}{}}{\mathrm{V}}{\vect{V}\left(#1\right)}}
+
+%%% Wave problem 
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\aE}[2]{a_{\E}\left( {#1}, {#2} \right)}
+
+%%% SPLITTING 
+\newcommand{\FtilD}{\tilde{F}_{\text{d}}}
+\newcommand{\FtilC}{\tilde{F}_{\text{c}}}
+\newcommand{\FtilE}{\tilde{F}_{\text{e}}}
