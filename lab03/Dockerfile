@@ -7,3 +7,6 @@ RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
 # Install TeXlive
 RUN apt-get update \
     && apt-get install texlive-latex-base -y 
+# Go to work directory
+RUN mkdir /workspace
+WORKDIR /workspace
