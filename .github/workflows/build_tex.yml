@@ -39,5 +39,3 @@ jobs:
           name: latex_compilation_output
           path: |
             lab03
-            !lab03/Dockerfile
-            !lab03/dr.sh
