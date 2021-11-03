@@ -25,10 +25,10 @@ jobs:
         run: |
           cd lab03
           mkdir figures
-          ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode test.tex"
-          # ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode main.tex"
-          # ./dr.sh "make -f main.makefile"
-          # ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode main.tex"
+          # ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode test.tex"
+          ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode main.tex"
+          ./dr.sh "make -f main.makefile"
+          ./dr.sh "pdflatex -synctex=1 -interaction=nonstopmode main.tex"
       
       # Sometimes logs and stuff are useful
       - name: Archive compilation results
