@@ -18,6 +18,7 @@ jobs:
       - name: create_docker_container
         run: |
           pwd
+          ls
           cd lab03
           docker build -t latex_container .
 
